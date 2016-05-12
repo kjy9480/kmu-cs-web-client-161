@@ -1,16 +1,11 @@
-// homework1
+//Question1
 console.log("hello homework3");
 
-
-// homework2
+//Question2
 function stringToInt(input){
-
-
-
 	if( typeof(input) == typeof(""))
 	{
-		return parseInt(input);
-	
+		return parseInt(input);	
 	}
 	else
 	{
@@ -18,47 +13,29 @@ function stringToInt(input){
 	}	
 }
 
-//homework3
-
+//Question3
 function maskNumber(input){
-
-	
-	var mask_number;
-	
-	mask_number= input.substr(0,7);
-
-	mask_number= mask_number +"****";
-	
-	
-
+	var mask_number;	
+	mask_number = input.substr(0,7);
+	mask_number = mask_number +"****";	
 	return mask_number;
-
 }
 
-//homework4
-
-function getAverage(input){
-
+//Question4
+function getAverage(input_array){
 	var sum = 0;
-	var num = input.length;
-	
+	var num = input_array.length;	
 	var avg ;
-
 	for(var i=0;i< num;i++)
-	{
-		
-		sum= sum+input[i];
+	{		
+		sum = sum+input_array[i];
 	}
-
-	avg= sum/num;
-
-	return avg 
+	avg = sum/num;
+	return avg;
 }
 
-//homework5
-
+//Question5
 function isMultipleSeven(input){
-
 	if( (input%7)=== 0 )
 	{
 		return true;
@@ -67,64 +44,46 @@ function isMultipleSeven(input){
 	{
 		return false;
 	}
-
-
 }
 
-//homework6
-
-function operation(arg,num_1,num_2)
+//Questionk6
+function operation(arg,num1,num2)
 {
-	
-
 	switch(arg)
 	{
 		case "add":
-		return num_1+num_2;
+		return num1+num2;
 		break;
 
 		case "substract":
-		return num_1-num_2;
+		return num1-num2;
 		break;
 
 		case "multiply":
-		return num_1*num_2;
+		return num1*num2;
 		break;
-
 
 		case "divide":
-		return num_1/num_2;
+		return num1/num2;
 		break;
-
 
 		default:
 		console.log("Not Supported");
 		break;
-
-		
-
 	}	
-
 }
 
-//homework7
-
+//Question7
 function triangleMtn(input){
-
 	var tri= "";
-
 	for(var i = 0;i<input;i++)
 	{
-
 		for(var j = 0; j<=i;j++)
 		{
-			tri= tri+"*"; 
+			tri = tri+"*"; 
 		}
-
-
-		tri= tri+"\n";
+		tri = tri+"\n";
 	}
-
 	console.log(tri);
 	return ;
 }
